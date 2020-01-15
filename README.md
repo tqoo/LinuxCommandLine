@@ -2,6 +2,7 @@
 
 This is a Linux Command Line simulater, where you can do ANYTHING you want, without breaking the computer!
 
+
 ### Lisence
 
 This is not licensed, my only wish is that you give credit to the owner of this (Ehsan Gaffori).
@@ -27,3 +28,9 @@ Now dectects computer hostname as well as login so RaspberryPiCommandLine is MOR
 Changed name to LinuxCommandLine beacuse it does not say raspberrypi as hostname.
 
 Can detect false commands!
+
+#### 13/01/2020, version 0.1.2
+
+Made varibles.py to store varibles.
+
+cd command works, version 0.1.0
