@@ -6,6 +6,7 @@ user = '$'
 login = os.getlogin()
 hostname = socket.gethostname()
 start = login + '@' + hostname + ':' + currentDirectory + user + ' '
+uhome = ['Desktop', 'Downloads', 'Examples', 'Music', 'snap', 'Templates', 'Videos', 'Documents']
 
 #main loop
 while True:
@@ -23,5 +24,8 @@ while True:
     if termlist[0] == 'nano' and len(termlist) == 2:
         print('Opening nano')
         webbrowser.open('file:////media/zane/AC66-1723/python/linuxcommandline/files/nano.html')
+    if termlist[0] == 'cd' and len(termlist) == 2:
+        if termlist[1] in uhome:
+            currentDirectory += termlist[1]
     
 
