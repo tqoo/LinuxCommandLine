@@ -1,6 +1,8 @@
-# LinuxCommandLine
+# LinuxCommandLine (LCL)
 
 This is a Linux Command Line simulater, where you can do ANYTHING you want, without breaking the computer!
+
+Abbriviated LCL.
 
 
 ### Lisence
