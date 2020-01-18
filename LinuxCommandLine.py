@@ -16,7 +16,7 @@ while True:
     Documents    Music              Public    Templates
     ''')
     if termlist[0] == 'nano' and len(termlist) == 2:
-        print('Opening nano')
+        print('Opening nano. When finished, type \'exit\' and click Enter to exit')
         webbrowser.open(nanopath)
     if termlist[0] == 'cd' and len(termlist) == 2:
         if termlist[1] in home:
