@@ -22,12 +22,11 @@ while True:
         if termlist[1] in home:
             currentPath += '/' + termlist[1]
             currentDirectory = termlist[1]
-    if termlist[0] == 'cd' and len(termlist) == 2:
-        if termlist[1] == '..':
+         if termlist[1] == '..':
             if currentDirectory in home:
                 currentDirectory = '~'
                 currentPath = '~'
-    start = login + '@' + hostname + ':' + currentDirectory + user + ' '
+    start = login + '@' + hostname + ':' + currentPath + user + ' '
 
     
 
