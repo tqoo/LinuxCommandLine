@@ -34,3 +34,8 @@ Can detect false commands!
 Made varibles.py to store varibles.
 
 cd command works, version 0.1.0
+
+#### 18/01/2020, version 0.1.3
+
+cd command can now go backwards and forwards!
+

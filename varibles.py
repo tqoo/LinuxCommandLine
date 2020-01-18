@@ -8,4 +8,4 @@ hostname = socket.gethostname()
 currentDirectory = '~'
 start = login + '@' + hostname + ':' + currentDirectory + user + ' '
 home = ['Desktop', 'Downloads', 'Pictures', 'snap', 'Videos', 'Documents', 'Music', 'Public', 'Templates']
-nanopath = 'file://' + Sos.getcwd() + '/files/nano.html'
+nanopath = 'file://' + os.getcwd() + '/files/nano.html'

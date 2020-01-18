@@ -17,7 +17,7 @@ while True:
     ''')
     if termlist[0] == 'nano' and len(termlist) == 2:
         print('Opening nano')
-        webbrowser.open('file:////media/zane/AC66-1723/python/linuxcommandline/files/nano.html')
+        webbrowser.open(nanopath)
     if termlist[0] == 'cd' and len(termlist) == 2:
         if termlist[1] in home:
             currentPath += '/' + termlist[1]
