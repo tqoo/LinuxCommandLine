@@ -41,3 +41,5 @@ cd command works, version 0.1.0
 
 cd command can now go backwards and forwards!
 
+Abbriviated to LCL
+
