@@ -1,4 +1,5 @@
 import os, socket, webbrowser
+from varibles import *
 
 
 #main loop
