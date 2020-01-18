@@ -20,7 +20,13 @@ while True:
         webbrowser.open('file:////media/zane/AC66-1723/python/linuxcommandline/files/nano.html')
     if termlist[0] == 'cd' and len(termlist) == 2:
         if termlist[1] in home:
-            currentDirectory = currentDirectory + '/' + termlist[1]
+            currentPath += '/' + termlist[1]
+            currentDirectory = termlist[1]
+    if termlist[0] == 'cd' and len(termlist) == 2:
+        if termlist[1] == '..':
+            if currentDirectory in home:
+                currentDirectory = '~'
+                currentPath = '~'
     start = login + '@' + hostname + ':' + currentDirectory + user + ' '
 
     
