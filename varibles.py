@@ -1,3 +1,5 @@
+import os, socket
+
 commands = ['cd', 'ls', 'nano']
 currentPath = '~'
 user = '$'
