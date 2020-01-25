@@ -29,6 +29,10 @@ while True:
                 if currentDirectory in home:
                     currentDirectory = '~'
                     currentPath = '~'
+        if termlist[0] == 'mkdir' and len(termlist) == 2:
+            if currentDirectory == '~':
+                termlist.append(termlist[1])
+
         start = login + '@' + hostname + ':' + currentPath + user + ' '
 
     

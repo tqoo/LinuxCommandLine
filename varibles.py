@@ -1,6 +1,6 @@
 import os, socket
 
-commands = ['cd', 'ls', 'nano']
+commands = ['cd', 'ls', 'nano', 'mkdir']
 currentPath = '~'
 user = '$'
 login = os.getlogin()
