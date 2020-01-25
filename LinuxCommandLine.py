@@ -26,17 +26,17 @@ while True:
                 
                 if notsecret == '54321KABOOM':
                     print('Welcome to Menu. For security, your input is not shown.')
-                     notsecret = getpass.getpass('> ')
+                    notsecret = getpass.getpass('> ')
 
-                     if notsecret == 'change':
-                         notsecret = getpass.getpass('> ')
+                    if notsecret == 'change':
+                        notsecret = getpass.getpass('> ')
 
                         if notsecret == 'userperm':
 
-                        if user == '$':
-                            user = '#'
-                        else:
-                            user = '$'
+                            if user == '$':
+                                user = '#'
+                            else:
+                                user = '$'
             else:
 
                 print('Opening nano. When finished, type \'exit\' and click Enter to exit')
