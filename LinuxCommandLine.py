@@ -14,10 +14,7 @@ while True:
         if termlist[0] not in commands:
             print(termlist[0] + ': command not found')
         if termlist[0] == 'ls' and currentDirectory == '~':
-            print('''
-            Desktop    Downloads         Pictures  snap       Videos
-        Documents    Music              Public    Templates
-        ''')
+            print(home['contentList'])
         if termlist[0] == 'nano' and len(termlist) == 2:
             
             if termlist[1] == '-www.letsparty.com':
@@ -56,9 +53,12 @@ while True:
         if termlist[0] == 'mkdir' and len(termlist) == 2:
             
             if currentDirectory == '~':
-                termlist.append(termlist[1])
+                home.append(termlist[1])
 
-        start = login + '@' + hostname + ':' + currentPath + user + ' '
+        if rootcmd:
+            start = login + '@' + hostname + ':' + currentDirectory + '#' + ' '
+        else:
+            start = login + '@' + hostname + ':' + currentDirectory + '$' + ' '
 
     
 

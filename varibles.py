@@ -2,10 +2,20 @@ import os, socket
 
 commands = ['cd', 'ls', 'nano', 'mkdir']
 currentPath = '~'
-user = '$'
+home = {
+    'contentList' : ['Desktop'],
+    'Desktop' : {
+        'Type' : 'Folder',
+        'Pemissions' : [3,3,3],
+        'Contents' : {}
+    }
+}
+rootcmd = False
 login = os.getlogin()
 hostname = socket.gethostname()
 currentDirectory = '~'
-start = login + '@' + hostname + ':' + currentDirectory + user + ' '
-home = ['Desktop', 'Downloads', 'Pictures', 'snap', 'Videos', 'Documents', 'Music', 'Public', 'Templates']
+if rootcmd:
+    start = login + '@' + hostname + ':' + currentDirectory + '#' + ' '
+else:
+    start = login + '@' + hostname + ':' + currentDirectory + '$' + ' '
 nanopath = 'file://' + os.getcwd() + '/files/nano.html'
