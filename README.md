@@ -2,12 +2,7 @@
 
 This is a Linux Command Line simulator, where you can do ANYTHING you want, without breaking the computer!
 
-Abbriviated LCL.
-
-
-### License
-
-This is not licensed, my only wish is that you give credit to the owner of this (tqoo).
+Abbreviated LCL.
 
 ### Modules
 
@@ -49,3 +44,6 @@ Made mkdir command & super-secret commmand.
 
 #### 22/11/2021
 Hello! Its been a long time, but I am working on this project now! I have an update planned to optimise and make my code more flexible, but that is still a WIP.
+
+#### 31/10/2024
+It's been an even longer time... added licence
